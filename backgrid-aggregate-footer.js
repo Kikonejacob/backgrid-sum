@@ -8,7 +8,7 @@
 		columnNames: [],
 
 		initialize: function () {
-			Backgrid.Body.prototype.initialize.apply(this, arguments);
+			Backgrid.Footer.prototype.initialize.apply(this, arguments);
 
 			this.columnNames = _.keys(this.columnOptions);
 			this.listenTo(this.collection, 'change add remove reset', this.render);
@@ -16,7 +16,7 @@
 		},
 
 		render: function () {
-			window.Backgrid.Body.prototype.render.apply(this, arguments);
+			window.Backgrid.Footer.prototype.render.apply(this, arguments);
 			if (this.prepend) {
 				this.$el.prepend(this.getSumRow().render().el);
 			} else {
