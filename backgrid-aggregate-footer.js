@@ -1,6 +1,6 @@
 (function (window) {
 
-	var SummedColumnBody = window.Backgrid.SummedColumnBody = window.Backgrid.Body.extend({
+	var AggreateRow = window.Backgrid.AggregateRow = window.Backgrid.Footer.extend({
 		formatter: Backgrid.StringFormatter,
 		template: _.template('<td class="<%= className %>"><div class="summary"><%= sum %></div><div class="summary-label"><%= label %></div></td>'),
 
